@@ -92,7 +92,7 @@ elif msg in newsIntent:
         path = path+'sports'
         response = url.urlopen(path)
         data = bs4.BeautifulSoup(response,'lxml')
-        h4List = data.findAll('h3',class_='title')
+        h4List = data.findAll('h4',class_='title')
         h4List = h4List[0:10]
 
         for i in range(len(h4List)):
