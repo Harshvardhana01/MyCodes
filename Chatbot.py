@@ -1,6 +1,10 @@
+#In a chatbot It is Better to start with a Greeting
 print('''
 Hey How are you today
 What can i get you this time''')
+#Import the speacial modules witch yo will be using in your code
+#Intent list is used for the possible Questions("Synoniums")
+#Mostly it is matter of ifs and elses to answer the user 
 import os,glob,random,webbrowser
 from datetime import datetime as dt
 helloIntent = ["hi","hello","hey","wassup","hey buddy"]
@@ -95,7 +99,8 @@ elif msg in newsIntent:
             print(f'{i+1}--{h4List[i].text}/n')
 
 else:
-    print('Sorry.....Cant understand you properly')
+    print(''''Sorry.....Cant understand you properly
+              Plase try Again'''')
 
 
 
